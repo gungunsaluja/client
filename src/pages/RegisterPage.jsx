@@ -13,6 +13,9 @@ const RegisterPage = () =>{
                     ></input><input placeholder = "Confirm Password" name = "confirmPassword" type = "password" required 
                     ></input>
                     <input type = "file" name = "profileImage" accept = "image/" required style = {{display:'none'}} ></input>
+                    <label>
+                        <img src = "/assets/addImage.png" alt = "add profile photo"></img>
+                    </label>
 
                 </form>
                 <a href = '/login'>Already have an account ? Log In Here
