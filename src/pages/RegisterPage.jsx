@@ -1,4 +1,6 @@
 import React from 'react'
+import "../styles/Register.scss"
+
 const RegisterPage = () =>{
     return (
         <div className = 'register'>
@@ -12,10 +14,13 @@ const RegisterPage = () =>{
                     ></input><input placeholder = "Password" name = "password" type = "password" required
                     ></input><input placeholder = "Confirm Password" name = "confirmPassword" type = "password" required 
                     ></input>
-                    <input type = "file" name = "profileImage" accept = "image/" required style = {{display:'none'}} ></input>
-                    <label>
+                    <input type = "file" name = "profileImage" accept = "image/" required style = {{display:'none'}} id = "image" ></input>
+                    <label htmlFor = "image">
                         <img src = "/assets/addImage.png" alt = "add profile photo"></img>
+                        <p>Upload your photo</p>
                     </label>
+                    <button type = "submit" >Register</button>
+
 
                 </form>
                 <a href = '/login'>Already have an account ? Log In Here
