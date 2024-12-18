@@ -5,7 +5,7 @@ const RegisterPage = () =>{
     return (
         <div className = 'register'>
             <div className = 'register_content'>
-                <form>
+                <form className = "register_content_form">
                     <input placeholder = "First Name" name = "firstname" required
                     ></input>
                     <input placeholder = "Last Name" name = "lastname" required
