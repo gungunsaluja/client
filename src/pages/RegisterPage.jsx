@@ -14,13 +14,19 @@ const RegisterPage = () =>{
         <div className = 'register'>
             <div className = 'register_content'>
                 <form className = "register_content_form">
-                    <input placeholder = "First Name" name = "firstName" required
+                    <input placeholder = "First Name" name = "firstName" 
+                    value = {formData.firstName}
+                    required
                     ></input>
-                    <input placeholder = "Last Name" name = "lastName" required
+                    <input placeholder = "Last Name" name = "lastName" value = {formData.lastName}
+                     required
                     ></input>
-                    <input placeholder = "Email" type = "email" name = "email" required 
-                    ></input><input placeholder = "Password" name = "password" type = "password" required
-                    ></input><input placeholder = "Confirm Password" name = "confirmPassword" type = "password" required 
+                    <input placeholder = "Email" type = "email" name = "email" value = {formData.email}
+                    required 
+                    ></input><input placeholder = "Password" name = "password" type = "password" value={formData.password}
+                    required
+                    ></input><input placeholder = "Confirm Password" name = "confirmPassword" type = "password" value={formData.confirmPassword}
+                    required 
                     ></input>
                     <input type = "file" name = "profileImage" accept = "image/" required style = {{display:'none'}} id = "image" ></input>
                     <label htmlFor = "image">
